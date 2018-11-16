@@ -1,9 +1,9 @@
 {
-  "name": "@mitm/assetbundlecompiler",
-  "version": "0.0.0-semantic-release",
+  "name": "@nolwenture/assetbundlecompiler",
+  "version": "1.0.0",
   "description": "Node.js wrapper around Unity3D's BuildPipeline to create AssetBundles from any files",
-  "repository": "git@github.com:mitmadness/AssetBundleCompiler.git",
-  "author": "Morgan Touverey Quilling <mtouverey@methodinthemadness.eu>",
+  "repository": "git@github.com:Zanitius/AssetBundleCompiler.git",
+  "author": "",
   "license": "MIT",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -13,7 +13,8 @@
     "semantic-release": "semantic-release",
     "test": "mocha \"dist/test/**/*.js\"",
     "lint": "tslint -t verbose \"src/**/*.ts\" \"test/**/*.ts\"",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@types/chai": "^4.1.0",
