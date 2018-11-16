@@ -23,7 +23,7 @@ public static class AssetBundleCompiler
 
         var build = new AssetBundleBuild {
             assetBundleName = assetBundleName,
-            assetNames = assetNames.Select(assetName => "Assets" + ds + "CopiedAssets" + ds + assetName).ToArray()
+            assetNames = assetNames.Select(assetName => "Assets" + ds + assetName).ToArray()
         };
 
         var builds = new[] { build };

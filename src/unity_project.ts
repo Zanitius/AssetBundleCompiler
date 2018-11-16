@@ -50,7 +50,7 @@ export async function warmupProject(context: BuildContext): Promise<void> {
     }
 
     await fsx.mkdir(context.editorScriptsDir);
-    await fsx.mkdir(context.assetsDir);
+    //await fsx.mkdir(context.assetsDir);
     await fsx.mkdir(context.assetBundleDir);
 }
 
@@ -123,7 +123,7 @@ export async function moveGeneratedAssetBundle(
 export async function cleanupProject(context: BuildContext): Promise<void> {
     await fsx.remove(context.editorScriptsDir);
     await fsx.remove(context.editorScriptsDir + '.meta');
-    await fsx.remove(context.assetsDir);
+    //await fsx.remove(context.assetsDir);
     await fsx.remove(context.assetsDir + '.meta');
     await fsx.remove(context.assetBundleDir);
 }
